@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QiaoMenTongxinActivity">
+
+   <include layout="@layout/item_title"
+       android:id="@+id/rl_tittle"/>
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:paddingBottom="3dp"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_aaaaaa"
+        android:layout_below="@id/rl_tittle" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutChatContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/ll_aaaaaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        >
+
+       <LinearLayout
+           android:gravity="center_vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <!--<Button
+               android:id="@+id/bt_biaoqing"
+               android:layout_marginLeft="30dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/iconfon_biaoqing"
+               />-->
+
+           <EditText
+               android:id="@+id/et_xiaoxi"
+               android:hint="写个小纸条给Ta"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="#eaeaea"
+               android:textSize="15sp"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="35dp" />
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/bt_songli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送礼"
+                android:textSize="15sp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/shape_huodong_more_btn"
+                android:textColor="#fff"
+                android:layout_marginRight="20dp"
+                />
+            <Button
+                android:id="@+id/bt_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/shape_huodong_more_btn"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gridView1"
+        android:visibility="gone"
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:verticalSpacing="15dp"
+        android:paddingLeft="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:numColumns="4"
+        >
+    </GridView>
+</RelativeLayout>

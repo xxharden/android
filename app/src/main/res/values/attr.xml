@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlideSwitch">
+        <!-- 按钮底层背景 -->
+        <attr name="background_back" format="reference" />
+        <!-- 上层按钮背景 -->
+        <attr name="btn_background" format="reference" />
+        <!-- 控件width -->
+        <attr name="mwidth" format="dimension" />
+        <!-- 控件height -->
+        <attr name="mheight" format="dimension" />
+        <!-- 控件上可拖动按钮width -->
+        <attr name="mbt_width" format="dimension" />
+        <!-- 控件上可拖动按钮height -->
+        <attr name="mbt_height" format="dimension" />
+    </declare-styleable>
+</resources>

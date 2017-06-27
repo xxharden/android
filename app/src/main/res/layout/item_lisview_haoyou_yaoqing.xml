@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+                    <com.tarena.utils.ImageCircleView
+                        android:id="@+id/iv_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/zhanweitu"
+                        android:layout_height="wrap_content" />
+
+                    <!--<ImageView
+                        android:id="@+id/iv_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/sex_nan" />-->
+                </RelativeLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name_lv_tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="往事如风"/>
+                <TextView
+                    android:id="@+id/age_lv_tv_1"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_lv_tv_1"
+                    android:text="22岁"/>
+                <TextView
+                    android:id="@+id/tv_xingzuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星座"
+                    android:layout_toRightOf="@+id/age_lv_tv_1"
+                    android:layout_alignBaseline="@+id/age_lv_tv_1"
+                    android:layout_marginLeft="15dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/age_lv_tv_1"
+                    android:text="北京—CBD"
+                    android:layout_marginTop="6dp"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/bt_yaoqing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@drawable/shape_huodong_more_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="邀请"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:textColor="#fff"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/bt_yicanjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_huodong_more_btn_huise"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="已参加"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:clickable="false"
+            android:textColor="#666"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/item_cut_line_2"/>
+</LinearLayout>

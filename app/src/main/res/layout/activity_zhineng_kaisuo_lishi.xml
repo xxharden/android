@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gqh.mystudio.activity.ZhinengKaisuoLishiActivity">
+
+    <include layout="@layout/item_title"/>
+    <include layout="@layout/item_cut_line_2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开锁历史"
+        android:textColor="#333"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="12.5dp"
+        />
+    <!--<LinearLayout-->
+        <!--android:layout_marginTop="14dp"-->
+        <!--android:layout_marginBottom="12.5dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="上次开锁时间："-->
+            <!--android:textColor="#666"-->
+            <!--android:textSize="15sp"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_time_up"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="2015-02-02 18:00"-->
+            <!--android:textColor="#666"-->
+            <!--android:textSize="15sp"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <include layout="@layout/item_cut_line"/>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_marginBottom="12.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <include layout="@layout/item_cut_line_2"/>
+
+</LinearLayout>

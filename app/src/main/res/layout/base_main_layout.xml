@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+       
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_zj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_list_select"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/feedback_" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="总计"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_zj"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#2B2C30"
+        android:visibility="gone" />
+<RelativeLayout 
+       android:id="@+id/layoutrl_shijian"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:visibility="gone" 
+    >
+     <LinearLayout
+        android:id="@+id/layout_shijian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_list_select"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="筛选时间："
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tv_shijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textSize="19sp" />
+
+    </LinearLayout>
+        <ImageButton
+          android:id="@+id/imbt_shijian"
+          android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginRight="3dp"
+          android:layout_alignParentRight="true"
+            android:src="@drawable/btn_addd" />
+    
+</RelativeLayout>
+   
+    <View
+        android:id="@+id/view_shijian"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#2B2C30"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+
+        <RelativeLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/loading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include layout="@layout/loading_layout" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nodata_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include layout="@layout/nodata_layout" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/failure_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include layout="@layout/failure_layout" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gqh.mystudio.activity.MyDongTaiActivity">
+
+    <include layout="@layout/item_title"/>
+    <include layout="@layout/item_cut_line_2"/>
+    <TextView
+        android:id="@+id/tv_shai"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/iconfont_iconfontxiangce1"
+        android:paddingLeft="15dp"
+        android:text="我的晒"
+        android:gravity="center_vertical"
+        android:drawablePadding="32.5dp"
+        android:textColor="#333"
+        android:textSize="15sp"
+        />
+    <include layout="@layout/item_cut_line"/>
+    <TextView
+        android:id="@+id/tv_qiao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/iconfont_2tianjiahaoyou"
+        android:paddingLeft="15dp"
+        android:text="我的敲"
+        android:gravity="center_vertical"
+        android:drawablePadding="32.5dp"
+        android:textColor="#333"
+        android:textSize="15sp"
+        />
+    <include layout="@layout/item_cut_line"/>
+    <TextView
+        android:id="@+id/tv_yue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/iconfont_huodong"
+        android:paddingLeft="15dp"
+        android:text="我的约"
+        android:gravity="center_vertical"
+        android:drawablePadding="32.5dp"
+        android:textColor="#333"
+        android:textSize="15sp"
+        />
+    <include layout="@layout/item_cut_line_2"/>
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_photo_huodong_item"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_photo"
+            android:gravity="center"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="14dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+
+
+            <com.tarena.utils.ImageCircleView
+                android:id="@+id/iv_photo"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/zhanweitu"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#333"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/rl_photo"
+            />
+        <ImageView
+            android:id="@+id/iv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sex_nv"
+            android:layout_toRightOf="@+id/name"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rl_photo"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/xingzuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/age"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:layout_below="@+id/age"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rl_photo"
+            android:layout_marginTop="6dp"
+            />
+
+        <Button
+            android:id="@+id/bt_qiaomen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="敲门"
+            android:textColor="#fff"
+            android:focusable="false"
+            android:textSize="15sp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/shape_huodong_more_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+        <Button
+            android:id="@+id/bt_kaimen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开门"
+            android:visibility="gone"
+            android:textColor="#fff"
+            android:focusable="false"
+            android:textSize="15sp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/shape_huodong_more_btn"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+        <Button
+            android:id="@+id/bt_jujue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拒绝"
+            android:visibility="gone"
+            android:textColor="#fff"
+            android:focusable="false"
+            android:textSize="15sp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/shape_huodong_more_btn"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/bt_kaimen"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已开门"
+            android:visibility="gone"
+            android:textColor="#333"
+            android:focusable="false"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+   <include layout="@layout/item_cut_line_2"/>
+
+</LinearLayout>

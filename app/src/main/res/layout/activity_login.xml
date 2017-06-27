@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:orientation="vertical"
+    tools:context=".activity.GongMinLoginActivity">
+
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconfont_fanhui"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@drawable/gongmin_login_back">
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:background="@null"
+                        android:id="@+id/et_phone"
+                        android:hint="请输入您的手机号"
+                        android:textSize="15sp"
+                        android:textColor="#666"
+                        android:maxLines="1"
+                        android:inputType="phone"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="34.5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp" />
+
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fen_denglu_zhuce"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:background="@null"
+                        android:id="@+id/et_password"
+                        android:hint="输入密码"
+                        android:textSize="15sp"
+                        android:textColor="#666"
+                        android:maxLines="1"
+                        android:inputType="textPassword"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="34.5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp" />
+
+
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fen_denglu_zhuce"
+                    />
+
+                <RelativeLayout
+                    android:layout_marginTop="8.5dp"
+                    android:layout_marginLeft="34.5dp"
+                    android:layout_marginRight="34.5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/rd_jizhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/login_bt_select_1"
+                        android:drawablePadding="5dp"
+                        android:text="记住密码"
+                        android:textSize="13sp"
+                        android:textColor="#333"
+                        />
+                    <Button
+                        android:id="@+id/wangji"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="忘记密码"
+                        android:onClick="doClick"
+                        android:textSize="13sp"
+                        android:textColor="#333"
+                        android:layout_alignParentRight="true"
+                        />
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/rd_tongyi"
+                    android:checked="true"
+                    android:button="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/login_bt_select_1"
+                    android:text="阅读并同意服务条款"
+                    android:drawablePadding="5dp"
+                    android:textSize="13sp"
+                    android:textColor="#333"
+                    android:background="@null"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/bt_login"
+                    android:onClick="doClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="登录"
+                    android:textSize="15sp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/shape_huodong_more_btn"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:layout_marginTop="17.5dp"
+                    android:layout_marginBottom="10dp"
+                    />
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

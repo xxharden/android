@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_photo_huodong_item"
+        android:gravity="center"
+        android:layout_width="39.5dp"
+        android:layout_height="39.5dp">
+
+        <com.tarena.utils.ImageCircleView
+            android:id="@+id/photo_huodong_item"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/zhanweitu"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/sex_lan_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/sex_nan" />
+    </RelativeLayout>
+</LinearLayout>

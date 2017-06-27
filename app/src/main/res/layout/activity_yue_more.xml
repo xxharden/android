@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/item_title"/>
+
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <RadioButton
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:text="最新活动"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="true"
+            android:background="@drawable/radiobtn_image_select_left"
+            android:textColor="@drawable/radiobtn_text_select"
+            android:id="@+id/radioButton1" />
+
+        <RadioButton
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="以往活动"
+            android:textColor="@drawable/radiobtn_text_select"
+            android:background="@drawable/radiobtn_image_select_right"
+            android:button="@null"
+            android:id="@+id/radioButton2" />
+    </RadioGroup>
+    <include layout="@layout/item_cut_line_2"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_yue_more"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

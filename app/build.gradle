@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.gqh.mystudio"
+        minSdkVersion 18
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    //在android下添加这个一个sourceSets.main
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("keystore.jks")
+            storePassword "cypaapp"
+            keyAlias "cypaapp"
+            keyPassword "cypaapp"
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+//            versionNameSuffix '.debug'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    //修改app 名称
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                File outputDirectory = new File(outputFile.parent);
+                def fileName = "cypa_app_v${defaultConfig.versionName}_${releaseTime()}_${variant.name}.apk"
+                output.outputFile = new File(outputDirectory, fileName)
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/achartengine-1.1.0.jar')
+    compile files('libs/alipaySingle-20160223.jar')
+    compile files('libs/ApiStoreSDK1.0.4.jar')
+    compile files('libs/asmack.jar')
+    compile files('libs/commons-views-1.0.0.jar')
+    compile files('libs/gson-2.2.2.jar')
+    compile files('libs/jpush-android-2.1.3.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/showGif.jar')
+    compile files('libs/fastjson-1.2.2.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile files('libs/xUtils-2.6.14.jar')
+    compile project(':websocket')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'de.greenrobot:eventbus:3.0.0-beta1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.github.bumptech.glide:okhttp-integration:1.4.0'
+    compile 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/gjsdk-1.0.0.jar')
+}

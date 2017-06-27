@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/item_title"/>
+        <include layout="@layout/item_cut_line_2"/>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房间号："
+                android:textColor="#333"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XXX(默认)"
+                android:textColor="#333"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日期："
+                android:textColor="#333"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/tv_time_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016/02/02"
+                android:background="#f2f2f2"
+                android:drawableRight="@drawable/down"
+                android:drawablePadding="3dp"
+                android:textColor="#333"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016/02/02"
+                android:visibility="gone"
+                android:background="#f2f2f2"
+                android:drawablePadding="3dp"
+                android:textColor="#333"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/tv_zhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:textSize="15sp"
+                android:text="至"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_time_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016/02/02"
+                android:background="#f2f2f2"
+                android:drawableRight="@drawable/down"
+                android:drawablePadding="3dp"
+                android:textColor="#333"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_time_picker"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间段："
+                android:textColor="#333"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:30"
+                android:background="#f2f2f2"
+                android:drawableRight="@drawable/down"
+                android:drawablePadding="3dp"
+                android:textColor="#333"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:textSize="15sp"
+                android:text="至"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18:00"
+                android:background="#f2f2f2"
+                android:drawableRight="@drawable/down"
+                android:drawablePadding="3dp"
+                android:textColor="#333"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务类型："
+                android:textColor="#333"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="室内清洁"
+                android:textColor="#333"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务要求："
+                android:textColor="#333"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_yaoqiu"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:background="#f2f2f2"
+            android:textColor="#666"
+            android:hint="请简单描述服务要求，在有人或无人情况服务。"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="start"
+            android:padding="2dp"
+            />
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bt_queren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:paddingRight="18dp"
+                android:paddingLeft="18dp"
+                android:background="@drawable/shape_huodong_more_btn"
+
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                />
+        </RelativeLayout>
+        <include layout="@layout/item_cut_line_2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/datePicker"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="38dp">
+
+            <TextView
+                android:id="@+id/quxiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/wancheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成"
+                android:layout_alignParentRight="true"
+                android:textSize="15sp"
+                android:layout_marginRight="20dp"
+                />
+        </RelativeLayout>
+        <include layout="@layout/item_cut_line"/>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/nian_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="年"
+                    android:textColor="#333"
+                    android:textSize="18sp"
+                    />
+                <com.gqh.mystudio.view.PickerView
+                    android:id="@+id/nian_pv"
+                    android:layout_width="100dp"
+                    android:layout_height="160dp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="37.5dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/yue_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="月"
+                    android:textColor="#333"
+                    android:textSize="18sp"
+                    />
+
+                <com.gqh.mystudio.view.PickerView
+                    android:id="@+id/yue_pv"
+                    android:layout_width="60dp"
+                    android:layout_height="160dp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginLeft="37.5dp"
+                >
+
+                <TextView
+                    android:id="@+id/ri_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="日"
+                    android:textColor="#333"
+                    android:textSize="18sp"
+                    />
+
+                <com.gqh.mystudio.view.PickerView
+                    android:id="@+id/ri_pv"
+                    android:layout_width="60dp"
+                    android:layout_height="160dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

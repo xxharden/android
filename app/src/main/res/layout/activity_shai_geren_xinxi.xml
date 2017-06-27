@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gqh.mystudio.activity.ShaiGerenXinxiActivity">
+
+    <include layout="@layout/item_title"
+        android:id="@+id/above"/>
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_below="@+id/above"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+                    <RelativeLayout
+                        android:layout_marginTop="27.5dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
+
+                        <com.tarena.utils.ImageCircleView
+                            android:id="@+id/iv_photo"
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/zhanweitu"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_marginTop="12.5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:textColor="#333"
+                            />
+
+                        <ImageView
+                            android:id="@+id/iv_sex"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sex_nan" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:textColor="#333"
+                            />
+                        <TextView
+                            android:id="@+id/tv_xingzuo"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:textColor="#333"
+                            />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/bt_qiaomen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="敲门"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/shape_huodong_more_btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginRight="17.5dp"
+                    />
+            </RelativeLayout>
+
+            <include layout="@layout/item_cut_line"/>
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="地址"
+                    android:layout_marginLeft="15.5dp"
+                    android:textColor="#333"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:textSize="15sp"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+            <include layout="@layout/item_cut_line"/>
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="签名"
+                    android:layout_marginLeft="15.5dp"
+                    android:textColor="#333"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_qianming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:textSize="15sp"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+            <include layout="@layout/item_cut_line"/>
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="家乡"
+                    android:layout_marginLeft="15.5dp"
+                    android:textColor="#333"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_jiaxiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:textSize="15sp"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+            <include layout="@layout/item_cut_line"/>
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="兴趣爱好"
+                    android:layout_marginLeft="15.5dp"
+                    android:textColor="#333"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_aihao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:textSize="15sp"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+            <include layout="@layout/item_cut_line_2"/>
+
+            <com.gqh.mystudio.view.ListViewForScrollView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.gqh.mystudio.view.ListViewForScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

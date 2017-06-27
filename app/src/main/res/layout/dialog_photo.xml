@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/ll_city_box"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+   >
+
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/tv_take_picture"
+            android:layout_width="match_parent"
+
+            android:layout_height="40dp"
+            android:text="拍照"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="16.5sp"
+            android:visibility="visible"/>
+        <include layout="@layout/item_cut_line"/>
+        <TextView
+            android:gravity="center"
+            android:background="@color/white"
+            android:id="@+id/choice_from_phone"
+            android:layout_width="match_parent"
+
+            android:textColor="#333"
+            android:textSize="16.5sp"
+            android:text="从手机相册中选取"
+            android:layout_height="40dp"
+            android:visibility="visible"/>
+        <include layout="@layout/item_cut_line"/>
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/cancel"
+            android:layout_height="40dp"
+            android:textColor="#333"
+            android:textSize="16.5sp"
+            android:layout_width="match_parent"
+            android:text="取消"
+            android:gravity="center"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

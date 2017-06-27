@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gqh.mystudio.activity.MyContract">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/item_title"/>
+            <include layout="@layout/item_cut_line_2"/>
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#333"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的房间"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_myroom"
+                    android:textColor="#666"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#333"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="合同期限"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_hetong_qixian"
+                    android:textColor="#666"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#333"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="实际到期"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_endTime"
+                    android:textColor="#666"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#333"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="房间租金"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_room_pay"
+                    android:textColor="#666"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <include layout="@layout/item_cut_line_2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="房屋备案"
+                android:textSize="15sp"
+                android:textColor="#333"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_beizhu"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="45dp"
+                android:textColor="#666"
+                android:textSize="15sp"
+                android:text="备注："
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.gqh.mystudio.view.GridViewForScrollView
+                android:id="@+id/gridview_beizhu"
+                android:layout_marginLeft="32.5dp"
+                android:layout_marginRight="32.5dp"
+                android:numColumns="3"
+                android:gravity="center"
+                android:listSelector="@null"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.gqh.mystudio.view.GridViewForScrollView>
+
+            <include layout="@layout/item_cut_line_2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我的合同"
+                android:textColor="#333"
+                android:textSize="15sp"
+                android:gravity="center"
+                />
+
+            <com.gqh.mystudio.view.GridViewForScrollView
+                android:id="@+id/gridview_hetong"
+                android:verticalSpacing="10dp"
+                android:numColumns="2"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:listSelector="@null"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:horizontalSpacing="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.gqh.mystudio.view.GridViewForScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

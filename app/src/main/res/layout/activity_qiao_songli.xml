@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ShouYeFragment">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/horizon_listview"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/item_title"/>
+        <include layout="@layout/item_cut_line_2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="#f2f2f2"
+            android:text="最热商品"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            />
+
+        <GridView
+            android:id="@+id/gridview"
+            android:numColumns="3"
+            android:listSelector="@null"
+            android:scrollbars="none"
+            android:paddingLeft="10dp"
+            android:verticalSpacing="5dp"
+            android:layout_marginTop="10dp"
+            android:horizontalSpacing="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </GridView>
+
+    </LinearLayout>
+
+    <com.gqh.mystudio.view.HorizontalListView
+        android:id="@+id/horizon_listview"
+        android:background="#55000000"
+        android:layout_above="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </com.gqh.mystudio.view.HorizontalListView>
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_jiaobia"
+            android:layout_marginLeft="100dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:src="@drawable/iconfont_gouwufangrugouwuche"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/tv_jiaobiao"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textSize="8sp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="@drawable/shape_shouye_jiaobiao"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/jiesuan"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rl_jiaobia"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结算"
+            android:textSize="15sp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/shape_huodong_more_btn"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            />
+        <Button
+            android:id="@+id/my_dingdan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的订单"
+            android:textSize="15sp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/shape_huodong_more_btn"
+            android:layout_toRightOf="@+id/jiesuan"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gqh.mystudio.activity.ShaiDetailActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/item_title"/>
+            <include layout="@layout/item_cut_line_2"/>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.tarena.utils.ImageCircleView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/zhanweitu"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#333"
+                            />
+                        <ImageView
+                            android:id="@+id/iv_sex"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/sex_nan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textSize="13sp"
+                            android:textColor="#333"
+                            android:layout_marginRight="15dp"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_dongtai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:textColor="#666"
+                        android:layout_marginRight="15dp"
+                        android:textSize="13sp"
+                        android:lineSpacingExtra="6dp"
+                        />
+
+                    <GridView
+                        android:id="@+id/gridview"
+                        android:numColumns="3"
+                        android:layout_marginRight="50dp"
+                        android:verticalSpacing="10dp"
+                        android:horizontalSpacing="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </GridView>
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/item_cut_line_2"/>
+        </LinearLayout>
+</RelativeLayout>

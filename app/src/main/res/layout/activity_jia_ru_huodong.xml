@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.YueJiaRuHuodongActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/lan_title"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#00D0CB"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:id="@+id/back_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/iconfont_fanhui"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:text="加入活动"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00D0CB"
+            android:text="约"
+            android:padding="2dp"
+            android:textSize="30sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/rl_tittle">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/rl_photo_huodong_item"
+                android:layout_width="39.5dp"
+                android:layout_height="39.5dp">
+
+                <com.tarena.utils.ImageCircleView
+                    android:id="@+id/photo_huodong_item"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/test_house_ohter"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/sex_lan_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/sex_nan" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发起人"
+                android:layout_below="@+id/rl_photo_huodong_item"
+                />
+
+            <TextView
+                android:id="@+id/name_huodong_more_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android"
+                android:layout_toRightOf="@+id/rl_photo_huodong_item"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/age_huodong_more_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_huodong_more_item"
+                android:text="22岁"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/name_huodong_more_item"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="白羊座"
+                android:layout_alignBaseline="@+id/age_huodong_more_item"
+                android:layout_toRightOf="@+id/age_huodong_more_item"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/test_house_ohter"
+                />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="青枫公园散步"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/zuolin_iconfont_zuobiao"
+                    android:text="北京-CBD"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/zuolin_iconfont_time"
+                    android:layout_marginTop="5dp"
+                    android:text="1月6号  13:00-14:00"/>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/yibaoming_huodong_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已报名：35"
+                        />
+                    <TextView
+                        android:id="@+id/dingjin_huodong_item"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="定金：35"
+                        />
+                </LinearLayout>
+
+                <GridView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numColumns="5"></GridView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定加入"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape_huodong_more_btn"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邀请好友"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_huodong_more_btn"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

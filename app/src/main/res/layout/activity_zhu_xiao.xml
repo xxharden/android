@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.gqh.mystudio.activity.XiuGaiMimaOkActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_tanchuang"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/xiugai_back_2"
+        >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否要退出当前帐号？"
+            android:textSize="20sp"
+            android:textColor="#333"
+            android:layout_marginTop="57.5dp"
+            android:layout_centerHorizontal="true"
+            />
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/tv"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/tuichu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退出"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/shape_huodong_more_btn"
+                android:gravity="center"
+                />
+            <Button
+                android:id="@+id/quxiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/shape_huodong_more_btn"
+                android:gravity="center"
+                android:layout_marginLeft="60dp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/x"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

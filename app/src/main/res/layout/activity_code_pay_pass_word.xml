@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gqh.mystudio.activity.SetPayPasswordActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/waji_title"
+        >
+        <ImageView
+            android:id="@+id/fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconfont_fanhui"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="输入6位支付密码:"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textColor="#333"
+        android:layout_below="@+id/rr"
+        />
+    <ImageView
+        android:id="@+id/ii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wanji_fen_2"
+        android:layout_below="@+id/tv"
+        />
+
+    <LinearLayout
+        android:id="@+id/box_mima"
+        android:layout_width="match_parent"
+        android:layout_height="87.5dp"
+        android:gravity="top"
+        android:layout_marginTop="22.5dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginRight="67dp"
+        android:layout_below="@+id/ii"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pay_box1"
+            style="@style/InputTextView"
+            android:layout_width="0dp"
+            android:background="@drawable/box"
+            android:layout_height="44dp"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/pay_box2"
+            style="@style/InputTextView"
+            android:layout_width="0dp"
+            android:background="@drawable/box"
+            android:layout_height="44dp"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/pay_box3"
+            style="@style/InputTextView"
+            android:layout_width="0dp"
+            android:background="@drawable/box"
+            android:layout_height="44dp"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/pay_box4"
+            style="@style/InputTextView"
+            android:layout_width="0dp"
+            android:background="@drawable/box"
+            android:layout_height="44dp"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/pay_box5"
+            style="@style/InputTextView"
+            android:layout_width="0dp"
+            android:background="@drawable/box"
+            android:layout_height="44dp"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/pay_box6"
+            style="@style/InputTextView"
+            android:layout_width="0dp"
+            android:background="@drawable/box"
+            android:layout_height="44dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wanji_fen_2"
+        android:layout_below="@+id/box_mima"
+        />
+    <LinearLayout
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="#CFCFCF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/pay_keyboard_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_one_selector"
+                android:contentDescription="@string/action_settings" />
+
+            <ImageView
+                android:id="@+id/pay_keyboard_two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_two_selector"
+                android:contentDescription="@string/action_settings" />
+
+            <ImageView
+                android:id="@+id/pay_keyboard_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_three_selector"
+                android:contentDescription="@string/action_settings" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/pay_keyboard_four"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_four_selector"
+                android:contentDescription="@string/action_settings" />
+
+            <ImageView
+                android:id="@+id/pay_keyboard_five"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_five_selector"
+                android:contentDescription="@string/action_settings" />
+
+            <ImageView
+                android:id="@+id/pay_keyboard_sex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_sex_selector"
+                android:contentDescription="@string/action_settings" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/pay_keyboard_seven"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_seven_selector"
+                android:contentDescription="@string/action_settings" />
+
+            <ImageView
+                android:id="@+id/pay_keyboard_eight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_eight_selector"
+                android:contentDescription="@string/action_settings" />
+
+            <ImageView
+                android:id="@+id/pay_keyboard_nine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_nine_selector"
+                android:contentDescription="@string/action_settings" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="确 认"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:id="@+id/pay_keyboard_space"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_space"
+                android:contentDescription="@string/action_settings" />
+
+            <ImageView
+                android:id="@+id/pay_keyboard_zero"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_zero_selector"
+                android:contentDescription="@string/action_settings" />
+
+            <ImageView
+                android:id="@+id/pay_keyboard_del"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_del_selector"
+                android:contentDescription="@string/action_settings" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.gqh.mystudio.activity.WangJiMiMaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/waji_title">
+
+        <ImageView
+            android:id="@+id/bt_fanhui"
+            android:onClick="doClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconfont_fanhui"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wangji_fen_1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="绑定手机验证："
+        android:textColor="#333"
+        android:textSize="15sp"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wanji_fen_2"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:textSize="15sp"
+            android:textColor="#333"
+            android:layout_marginTop="21.5dp"
+            />
+        <Button
+            android:id="@+id/bt_code_send"
+            android:onClick="doClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="发送验证码"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/wangji_back_cheng"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:background="#f2f2f2"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:hint="请输入手机验证码"
+            android:paddingLeft="15dp"
+            android:layout_below="@+id/tv_phone"
+            android:layout_marginTop="22.5dp"
+            android:textSize="15sp"
+            android:textColor="#666"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wanji_fen_2"
+        />
+    <Button
+        android:id="@+id/bt_ok"
+        android:onClick="doClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:background="@drawable/wangji_back_cheng2"
+        android:gravity="center"
+        android:layout_marginTop="19dp"
+        />
+
+</LinearLayout>

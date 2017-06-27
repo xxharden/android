@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.gqh.mystudio.activity.MyGerenSetActivity">
+
+    <include layout="@layout/item_title"/>
+    <include layout="@layout/item_cut_line_2"/>
+    <TextView
+        android:id="@+id/tv_set_myinfo"
+        android:layout_width="match_parent"
+        android:text="个人信息"
+        android:textColor="#333"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:layout_height="50dp" />
+    <include layout="@layout/item_cut_line"/>
+    <TextView
+        android:id="@+id/tv_set_password"
+        android:layout_width="match_parent"
+        android:text="账户安全"
+        android:textColor="#333"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:layout_height="50dp" />
+    <include layout="@layout/item_cut_line_2"/>
+</LinearLayout>

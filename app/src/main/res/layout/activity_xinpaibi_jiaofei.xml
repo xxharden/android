@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gqh.mystudio.activity.XinpaibiJiaofeiActivity">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/item_title"/>
+            <include layout="@layout/item_cut_line_2"/>
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+
+            <include layout="@layout/item_cut_line_2"/>
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="2016/03/01 至 2016/03/31"
+                    android:textColor="#333"
+                    android:textSize="18sp"
+                    />
+                <RelativeLayout
+                    android:id="@+id/rl_jiaofei"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_heji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="合计：0"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#333"
+                        android:textSize="18sp"
+                        />
+
+                    <Button
+                        android:id="@+id/bt_jiaofei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="缴费"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:background="@drawable/shape_huodong_more_btn"
+                        android:gravity="center"
+                        android:layout_marginRight="15dp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

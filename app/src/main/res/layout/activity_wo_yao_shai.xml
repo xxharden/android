@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.ShaiWoYaoShaiActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_tanchuang"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="275dp"
+        android:background="@drawable/xiugai_back_2"
+        >
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_marginBottom="10dp"
+               android:gravity="center_vertical"
+               android:layout_width="match_parent"
+               android:layout_height="60dp">
+
+               <com.tarena.utils.ImageCircleView
+                   android:id="@+id/iv_photo"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="8dp"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp" />
+               <TextView
+                   android:id="@+id/tv_name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                    android:text="Android studio"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginTop="5dp"
+                   />
+               <ImageView
+                   android:id="@+id/iv_xingbie"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/sex_nv"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginLeft="10dp"
+                   />
+           </LinearLayout>
+
+
+          <EditText
+              android:id="@+id/et_text"
+              android:hint="还可以输入300个字..."
+              android:gravity="start"
+              android:layout_weight="1"
+              android:layout_marginLeft="30dp"
+              android:layout_marginRight="30dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+
+           <LinearLayout
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:gravity="center_vertical"
+               android:layout_marginBottom="7.5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <Button
+                   android:id="@+id/bt_paizhao"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:background="@drawable/shai_fabu"
+                   />
+
+               <GridView
+                   android:id="@+id/gridview"
+                   android:numColumns="3"
+                   android:listSelector="@null"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginLeft="30dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="40dp"></GridView>
+
+           </LinearLayout>
+           <RelativeLayout
+               android:gravity="center"
+               android:layout_marginBottom="27.5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <Button
+                   android:id="@+id/bt_fabu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/shape_huodong_more_btn"
+                   android:text="发送"
+                   android:textColor="#fff"
+                   android:textSize="15sp"
+                   android:paddingLeft="15dp"
+                   android:paddingRight="15dp"
+                   android:paddingTop="2dp"
+                   android:paddingBottom="2dp"
+                   />
+           </RelativeLayout>
+       </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/x"/>
+    </RelativeLayout>
+</RelativeLayout>

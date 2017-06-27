@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.YueJiaruHongdongOkActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_tanchuang"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xiugai_back_2"
+        >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报名成功"
+            android:textSize="20sp"
+            android:textColor="#333"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yue_jiaru_dui"
+            android:layout_centerInParent="true"
+            />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_below="@+id/tv"
+            android:layout_marginTop="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bt_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  确  定  "
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:gravity="center"
+                android:background="@drawable/shape_huodong_more_btn"
+                />
+
+            <Button
+                android:id="@+id/bt_yaoqing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邀请好友"
+                android:layout_marginLeft="15dp"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:gravity="center"
+                android:background="@drawable/shape_huodong_more_btn"
+                />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/bt_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/x"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

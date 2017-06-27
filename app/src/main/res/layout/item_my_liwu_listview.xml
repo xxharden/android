@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="120.5dp">
+
+    <ImageView
+        android:id="@+id/image_liwu"
+        android:layout_width="134.5dp"
+        android:layout_height="89.5dp"
+        android:src="@drawable/zhanweitu"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="14dp"
+        />
+
+    <TextView
+        android:id="@+id/name_liwu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="红玫瑰X1"
+        android:textSize="17sp"
+        android:textColor="#333"
+        android:layout_toRightOf="@+id/image_liwu"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <Button
+        android:id="@+id/bt_huizeng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_huodong"
+        android:text="回赠"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_photo"
+        android:layout_toRightOf="@+id/name_liwu"
+        android:layout_below="@+id/bt_huizeng"
+        android:layout_marginTop="23dp"
+        android:layout_width="39.5dp"
+        android:layout_height="39.5dp">
+
+        <com.tarena.utils.ImageCircleView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/zhanweitu"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/sex_lv_image_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/sex_nan" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name_liwu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="往事如风"
+        android:textSize="14sp"
+        android:textColor="#666"
+        android:layout_toRightOf="@+id/rl_photo"
+        android:layout_below="@+id/bt_huizeng"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/age_liwu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22岁"
+        android:textSize="11sp"
+        android:textColor="#666"
+        android:layout_toRightOf="@+id/rl_photo"
+        android:layout_below="@+id/tv_name_liwu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        />
+    <TextView
+        android:id="@+id/xingbie_liwu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="女"
+        android:textSize="11sp"
+        android:textColor="#666"
+        android:layout_toRightOf="@+id/age_liwu"
+        android:layout_below="@+id/tv_name_liwu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        />
+
+    <TextView
+        android:id="@+id/address_liwu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="北京-CBD"
+        android:textSize="11sp"
+        android:textColor="#666"
+        android:layout_toRightOf="@+id/rl_photo"
+        android:layout_below="@+id/age_liwu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        />
+</RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qiaowomen_fen_kuan"
+        />
+
+</LinearLayout>

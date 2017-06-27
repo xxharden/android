@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:src="@drawable/zhanweitu"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#333"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_jiage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fb7c7c"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/tv_danwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="22dp">
+
+            <Button
+                android:id="@+id/bt_jian"
+                android:text="一"
+                android:focusable="false"
+                android:clickable="true"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="#666"
+                android:background="#999"
+                android:layout_width="18dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_shuliang"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="#f2f2f2"
+                android:text="1"
+                android:padding="2dp"
+                android:textColor="#666"
+                android:textSize="12sp"
+                android:gravity="center"
+                />
+            <Button
+                android:id="@+id/bt_jia"
+                android:text="+"
+                android:clickable="true"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#666"
+                android:background="#999"
+                android:layout_width="18dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_zongjia"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#fb7c7c"
+            android:gravity="center"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+    <include layout="@layout/item_cut_line"/>
+</LinearLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.gqh.mystudio.view.MyScrollView
+        android:id="@+id/scrollView"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lan_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/zuolin_lan"/>
+
+                    <TextView
+                        android:id="@+id/shai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="最新晒"
+                        android:textColor="#333"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="32.5dp"
+                        />
+                    <RelativeLayout
+                        android:layout_below="@+id/shai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/listview_shai"
+                            android:layout_width="match_parent"
+                            android:layout_toLeftOf="@+id/ll_woyaoshai"
+                            android:layout_marginRight="25dp"
+                            android:layout_height="100dp"/>
+
+
+                        <Button
+                            android:id="@+id/bt_up_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/zuolin_1"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            />
+                        <Button
+                            android:id="@+id/bt_next_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/zuolin_2"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/ll_woyaoshai"
+                            android:gravity="center"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="26dp"
+                            android:layout_alignParentRight="true"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/zuoling_iconfont_camera"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我要晒"
+                                android:gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:textSize="13sp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="2dp"
+                                android:paddingBottom="2dp"
+                                android:background="@drawable/shape_huodong_more_btn"
+                                android:textColor="#fff"
+                                />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/ll_more_shai"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:background="@drawable/zuolin_more"
+                    >
+
+                    <TextView
+                        android:text="更多"
+                        android:textSize="14sp"
+                        android:textColor="#333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/zuolin_iconfont_gengduo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/zuolin_lv"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/listview_qiao"
+                        android:layout_width="match_parent"
+                        android:layout_height="212dp">
+                    </android.support.v4.view.ViewPager>
+
+                    <Button
+                        android:id="@+id/bt_up_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/zuolin_1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        />
+                    <Button
+                        android:id="@+id/bt_next_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/zuolin_2"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_more_qiao"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:background="@drawable/zuolin_more"
+                    >
+
+                    <TextView
+                        android:text="更多"
+                        android:textSize="14sp"
+                        android:textColor="#333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/zuolin_iconfont_gengduo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/cheng_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/zuolin_cheng"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/listview_yue"
+                        android:layout_width="match_parent"
+                        android:layout_toLeftOf="@+id/bt_fabu"
+                        android:layout_height="160dp">
+
+                    </android.support.v4.view.ViewPager>
+
+                    <Button
+                        android:id="@+id/bt_up_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/zuolin_1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        />
+                    <Button
+                        android:id="@+id/bt_next_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/zuolin_2"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/bt_fabu"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/zuolin_iconfont_zengjia"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发布活动"
+                            android:textColor="#fff"
+                            android:gravity="center"
+                            android:textSize="13sp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:background="@drawable/shape_huodong_more_btn"
+                            android:layout_marginTop="10dp"
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_more_yue"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="15.5dp"
+                    android:gravity="center"
+                    android:background="@drawable/zuolin_more"
+                    >
+
+
+                    <TextView
+                        android:text="更多"
+                        android:textSize="14sp"
+                        android:textColor="#333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/zuolin_iconfont_gengduo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.gqh.mystudio.view.MyScrollView>
+</RelativeLayout>

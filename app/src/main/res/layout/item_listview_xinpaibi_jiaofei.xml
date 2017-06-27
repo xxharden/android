@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+        <TextView
+            android:id="@+id/tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#333"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:id="@+id/tv_feiyong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="费用："
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#999"
+            android:textSize="15sp"
+            />
+        <CheckBox
+            android:id="@+id/image_check"
+            android:layout_width="15dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_height="15dp"
+            android:background="@drawable/zhangdan_jiaofei_checkbox"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:button="@null"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <include layout="@layout/item_cut_line"/>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gqh.mystudio.activity.Guanjia_PingjiaActivity">
+
+    <include layout="@layout/item_title"/>
+
+    <include layout="@layout/item_cut_line_2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请对本次服务打分"
+        android:gravity="center"
+        android:textColor="#333"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="反馈速度:"
+            android:textColor="#333"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <com.gqh.mystudio.view.MyRatingBar
+            android:id="@+id/rb_speed"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </com.gqh.mystudio.view.MyRatingBar>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务态度:"
+            android:textColor="#333"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            />
+        <com.gqh.mystudio.view.MyRatingBar
+            android:id="@+id/rb_attitude"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </com.gqh.mystudio.view.MyRatingBar>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务质量:"
+            android:textColor="#333"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            />
+        <com.gqh.mystudio.view.MyRatingBar
+            android:id="@+id/rb_standard"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </com.gqh.mystudio.view.MyRatingBar>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="32.5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_pingjia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="14sp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/pingjia_back_2"
+            android:hint="写点评语吧，我们会不断地改进服务！"
+            android:gravity="start"
+            android:padding="5dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_queren"
+            android:background="@drawable/shape_huodong_more_btn"
+            android:text="确认"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <include layout="@layout/item_cut_line_2"/>
+</LinearLayout>

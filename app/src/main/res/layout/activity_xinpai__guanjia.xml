@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gqh.mystudio.activity.Xinpai_GuanjiaActivity">
+
+
+    <include layout="@layout/item_title"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/qiaowomen_fen_kuan"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_baojie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/guanjia_baojie_1"
+            />
+        <ImageView
+            android:id="@+id/iv_weixiu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/guanjia_weixiu_1"
+            android:layout_marginLeft="67.5dp"
+            />
+        <ImageView
+            android:id="@+id/iv_tousu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/guanjia_tousu_1"
+            android:layout_marginLeft="67.5dp"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/item_cut_line"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_jilu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务记录"
+            android:textColor="#333"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/guanjia_jiantou_shuang"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="5dp"
+
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/qiaowomen_fen_kuan"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

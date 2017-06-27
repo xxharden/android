@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gqh.mystudio.activity.ChongzhiActivity">
+
+    <include layout="@layout/item_title"/>
+    <include layout="@layout/item_cut_line_2"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额："
+            android:textColor="#333"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            />
+        <EditText
+            android:id="@+id/et_jine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="13.5dp"
+            android:hint="请输入充值金额"
+            android:inputType="numberDecimal|number"
+            android:textColor="#666"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:padding="3dp"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/item_cut_line_2"/>
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/bt_chongzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingRight="18dp"
+            android:paddingLeft="18dp"
+            android:background="@drawable/shape_huodong_more_btn"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

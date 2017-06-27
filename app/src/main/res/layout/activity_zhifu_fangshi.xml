@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gqh.mystudio.activity.ZhifuFangshiActivity">
+
+    <include layout="@layout/item_title"/>
+    <include layout="@layout/item_cut_line_2"/>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_jine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="365"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/bi_1"
+            android:drawablePadding="5dp"
+            />
+
+    </RelativeLayout>
+    <include layout="@layout/item_cut_line_2"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_xinpaibi"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/image_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zhifu_xinpaibi"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新派币"
+            android:layout_toRightOf="@+id/image_1"
+            android:layout_marginLeft="51.5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#333"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/image_dui_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/zhifu_2"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_jine_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="365"
+            android:textColor="#333"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/image_dui_1"
+            android:drawableLeft="@drawable/bi_1"
+            android:drawablePadding="5dp"
+            android:layout_marginRight="40dp"
+            />
+
+    </RelativeLayout>
+    <include layout="@layout/item_cut_line"/>
+    <RelativeLayout
+        android:id="@+id/rl_weixin"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/image_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zhifu_weixin"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信"
+            android:layout_toRightOf="@+id/image_2"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#333"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/image_dui_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/zhifu_2"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_jine_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="365"
+            android:textColor="#333"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/image_dui_2"
+            android:drawableLeft="@drawable/bi_1"
+            android:drawablePadding="5dp"
+            android:layout_marginRight="40dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    <include layout="@layout/item_cut_line"/>
+    <RelativeLayout
+        android:id="@+id/rl_zhifubao"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/image_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zhifu_zhifubao"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝"
+            android:layout_toRightOf="@+id/image_3"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#333"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/image_dui_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/zhifu_2"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_jine_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="365"
+            android:textColor="#333"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/image_dui_3"
+            android:drawableLeft="@drawable/bi_1"
+            android:drawablePadding="5dp"
+            android:layout_marginRight="40dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    <include layout="@layout/item_cut_line_2"/>
+
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_zhifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/shape_huodong_more_btn"
+            android:text="确认支付"
+            android:textColor="#fff"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

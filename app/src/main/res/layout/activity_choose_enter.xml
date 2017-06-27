@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context="com.gqh.mystudio.activity.ChooseEnterActivity">
+
+
+
+        <ImageView
+            android:id="@+id/image_fangke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/choose_1"
+            android:layout_marginLeft="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:onClick="doClick"
+            />
+
+        <ImageView
+            android:id="@+id/image_gongmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/choose_2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:onClick="doClick"
+            />
+
+
+</RelativeLayout>

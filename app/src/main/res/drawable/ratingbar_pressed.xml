@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- checkbox按下时的背景色 -->
+    <item android:drawable="@color/ratingbar_pressed" android:state_pressed="true"></item>
+    <!-- checkbox未按下时的背景色 -->
+    <item android:drawable="@color/ratingbar_unpressed" android:state_pressed="false"></item>
+
+</selector>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.xinpaizf.activity.QiaoDetailFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lan_title"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#00D0CB"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/back_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/iconfont_fanhui"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00D0CB"
+            android:text="晒"
+            android:padding="2dp"
+            android:textSize="38sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_below="@+id/rl_tittle"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_photo"
+            android:layout_marginLeft="20dp"
+            android:layout_width="39.5dp"
+            android:layout_height="39.5dp">
+
+            <com.tarena.utils.ImageCircleView
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/test_house_ohter"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/sex_lan_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sex_nan" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:text="Adriana Lima"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/rl_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/age_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 岁"
+            android:layout_below="@id/name_tv"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/rl_photo"
+            />
+
+        <TextView
+            android:id="@+id/xingzuo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="摩羯座"
+            android:layout_below="@id/name_tv"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/age_tv"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/xingzuo_tv"
+            android:padding="2dp"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_marginRight="80dp"
+            android:background="#FF4A00"
+            android:text="敲门"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_user_daohang"
+        android:layout_width="match_parent"
+        android:background="#666"
+        android:layout_below="@+id/rl_user"
+        android:layout_height="60dp">
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/user_content"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#120964"
+        android:layout_below="@+id/rl_user_daohang"
+        android:layout_height="match_parent">
+    </LinearLayout>
+
+</RelativeLayout>

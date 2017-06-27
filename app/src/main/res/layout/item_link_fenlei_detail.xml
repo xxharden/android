@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="7.5dp"
+        android:layout_marginBottom="7.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_photo_fenlei_detail"
+            android:layout_marginLeft="15dp"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:src="@drawable/zhanweitu"
+            />
+        <TextView
+            android:id="@+id/tv_name_fenlei_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="afasfasf"
+            android:ellipsize="end"
+            android:layout_toRightOf="@+id/image_photo_fenlei_detail"
+            android:layout_marginLeft="25dp"
+            android:textSize="16sp"
+            android:textColor="#333"
+            />
+        <TextView
+            android:id="@+id/tv_jieshao_fenlei_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/image_photo_fenlei_detail"
+            android:layout_below="@+id/tv_name_fenlei_detail"
+            android:layout_marginLeft="27.5dp"
+            android:layout_marginTop="12.5dp"
+            />
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系电话："
+            android:textColor="#999"
+            android:textSize="13sp"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_name_fenlei_detail"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+    <include layout="@layout/item_cut_line_2"/>
+
+</LinearLayout>
