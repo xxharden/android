@@ -24,6 +24,9 @@ import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 import com.gqh.mystudio.R;
+import com.gqh.mystudio.activity.DianBiaoActivity;
+import com.gqh.mystudio.activity.PeiDianXiangActivity;
+import com.gqh.mystudio.activity.ShuiBiaoActivity;
 import com.gqh.mystudio.activity.ZhiYinShuiActivity;
 import com.gqh.mystudio.activity.ZhinengKaisuoLishiActivity;
 import com.gqh.mystudio.application.BamsApplication;
@@ -92,6 +95,7 @@ public class ZhiNengshenghuoFragment extends BaseHttpFragment implements SwipeRe
                 case 123:
                     String s = (String) msg.obj;
                     showToast(s);
+                    break;
                 case HANDELR_TEXT:
                     wiperSwitch1.setLockOff();
                     break;
@@ -117,8 +121,8 @@ public class ZhiNengshenghuoFragment extends BaseHttpFragment implements SwipeRe
     private SeekBar seekBar;
     @ViewInject(R.id.ll_parent)
     private LinearLayout ll_parent;
-    @ViewInject(R.id.rl_zhiyinshui)
-    private RelativeLayout rl_zhiyinshui;
+    @ViewInject(R.id.rl_peidianxiang)
+    private RelativeLayout rl_peidianxiang;
     private User mUser;
     // @ViewInject(R.id.zys_refresh_layout)
     // private SwipeRefreshLayout refreshLayout;
@@ -159,6 +163,10 @@ public class ZhiNengshenghuoFragment extends BaseHttpFragment implements SwipeRe
     private Button bt_tongfeng;
     @ViewInject(R.id.tv_snwd)
     private TextView tv_snwd;
+    @ViewInject(R.id.zn_rl_dianbiao)
+    private RelativeLayout rl_dianbiao;
+    @ViewInject(R.id.zn_rl_shuibiao)
+    private RelativeLayout rl_shuibiao;
     private ViewGroup.LayoutParams layoutParams;
     private int mLeftMargin;
     private TextPaint mPaint;
@@ -174,9 +182,10 @@ public class ZhiNengshenghuoFragment extends BaseHttpFragment implements SwipeRe
     private WebSocketConnection connection4 = new WebSocketConnection();
 
     @OnClick({R.id.tvMore, R.id.ll_gongyumen, R.id.kaisuo_lishi, R.id.bt_kaiguan, R.id.bt_kaiguan_2,
-            R.id.bt_kaiguan_3, R.id.rl_zhiyinshui, R.id.iv_cl_off, R.id.iv_cl_pause, R.id.iv_cl_on,
+            R.id.bt_kaiguan_3, R.id.rl_peidianxiang, R.id.iv_cl_off, R.id.iv_cl_pause, R.id.iv_cl_on,
             R.id.iv_erjian1, R.id.iv_erjian2, R.id.iv_sanjian1, R.id.iv_sanjian2, R.id.iv_sanjian3,
-            R.id.iv_kt_di, R.id.iv_kt_zhong, R.id.iv_kt_gao, R.id.bt_zhileng, R.id.bt_zhire, R.id.bt_tongfeng})
+            R.id.iv_kt_di, R.id.iv_kt_zhong, R.id.iv_kt_gao, R.id.bt_zhileng, R.id.bt_zhire, R.id.bt_tongfeng,
+            R.id.zn_rl_dianbiao, R.id.zn_rl_shuibiao})
     private void onClick(View v) {
         try {
             HashMap<String, Object> data = new HashMap<>();
@@ -184,8 +193,8 @@ public class ZhiNengshenghuoFragment extends BaseHttpFragment implements SwipeRe
                 case R.id.kaisuo_lishi:
                     toActivity(ZhinengKaisuoLishiActivity.class);
                     break;
-                case R.id.rl_zhiyinshui:
-                    //toActivity(ZhiYinShuiActivity.class);
+                case R.id.rl_peidianxiang:
+                    toActivity(PeiDianXiangActivity.class);
                     break;
                 case R.id.bt_kaiguan:
                     if (bt_kaiguan.isChecked()) {
@@ -370,6 +379,12 @@ public class ZhiNengshenghuoFragment extends BaseHttpFragment implements SwipeRe
 //                    wenduNum=wenduNum-1;
 //                    tvWendu.setText(String.valueOf(wenduNum));
 //                    break;
+                case R.id.zn_rl_dianbiao:
+                    toActivity(DianBiaoActivity.class);
+                    break;
+                case R.id.zn_rl_shuibiao:
+                    toActivity(ShuiBiaoActivity.class);
+                    break;
                 case R.id.tvMore:
                     showToast("敬请期待");
                     break;
@@ -506,6 +521,8 @@ public class ZhiNengshenghuoFragment extends BaseHttpFragment implements SwipeRe
             YunYouLock yy = g.fromJson(s, YunYouLock.class);
             if (yy.isSuccess()) {
                 return "开锁成功";
+            } else {
+                return "开锁失败";
             }
         }
         return null;

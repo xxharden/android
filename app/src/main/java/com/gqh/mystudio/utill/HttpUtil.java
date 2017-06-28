@@ -33,4 +33,24 @@ public class HttpUtil {
         }
         return null;
     }
+
+    public static String getDianBiao(String url, String id) {
+        try {
+            OkHttpClient okHttpClient = new OkHttpClient();
+            RequestBody formBody = new FormEncodingBuilder()
+                    .add("MeterID", id).build();
+            Request request = new Request.Builder()
+                    .url(url)
+                    .post(formBody).build();
+            Response response = okHttpClient.newCall(request).execute();
+            if (response.isSuccessful()) {
+                return response.body().string();
+            } else {
+                throw new IOException("Unexpected code " + response);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

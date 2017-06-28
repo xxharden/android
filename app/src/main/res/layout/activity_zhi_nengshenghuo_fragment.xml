@@ -420,6 +420,7 @@
             <!--<include layout="@layout/item_cut_line_2" />-->
 
             <RelativeLayout
+                android:id="@+id/zn_rl_dianbiao"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:gravity="center_vertical">
@@ -456,7 +457,44 @@
             <include layout="@layout/item_cut_line_2" />
 
             <RelativeLayout
-                android:id="@+id/rl_zhiyinshui"
+                android:id="@+id/zn_rl_shuibiao"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_shuibiao"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/dianbiao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/iv_shuibiao"
+                    android:text="水表"
+                    android:textColor="#333"
+                    android:textSize="18sp" />
+
+
+                <CheckBox
+                    android:id="@+id/bt_kaiguan_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/kaiguan_off"
+                    android:button="@null" />
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/item_cut_line_2" />
+
+            <RelativeLayout
+                android:id="@+id/rl_peidianxiang"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:gravity="center_vertical">
@@ -473,13 +511,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
                     android:layout_toRightOf="@id/iv_yinshuiji"
-                    android:text="饮水机"
+                    android:text="智能配电箱"
                     android:textColor="#333"
                     android:textSize="18sp" />
 
 
                 <CheckBox
-                    android:id="@+id/bt_kaiguan_3"
+                    android:id="@+id/bt_kaiguan_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"

@@ -407,7 +407,10 @@
             android:name=".activity.AboutActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".activity.ZhiYinShuiActivity" />
-        <activity android:name=".activity.ZysPayActivity"></activity>
+        <activity android:name=".activity.ZysPayActivity" />
+        <activity android:name=".activity.DianBiaoActivity" />
+        <activity android:name=".activity.ShuiBiaoActivity" />
+        <activity android:name=".activity.PeiDianXiangActivity"></activity>
     </application>
 
 </manifest>
